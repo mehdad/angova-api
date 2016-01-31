@@ -8,10 +8,9 @@
 module.exports = {
 
   attributes: {
-      user_id:{
-          type: 'long',
-          required: true,
-          unique: true
+      user:{
+          model: 'user',
+          required: true
       },
       favorate: {
           type: 'string',
@@ -24,22 +23,21 @@ module.exports = {
           type: 'string'
       },
       type: {
-          type: 'number',
+          type: 'integer',
           required: true
       },
       price: {
-          type: 'number',
+          type: 'integer',
           required: true
       },
       lease: {
-          type: 'number'
+          type: 'integer'
       },
       mortgage: {
-          type: 'number'
+          type: 'integer'
       },
       gallary: {
-          type: 'array',
-          default: []
+          type: 'string'
       },
       end_date: {
           type: 'date',
@@ -47,16 +45,7 @@ module.exports = {
           unique: true
       },
       start_date: {
-          type: 'date',
-          default: Date.now()
-      },
-      createAt: {
-          type: 'date',
-          default: Date.now()
-      },
-      updatedAt: {
-          type: 'date',
-          default: Date.now()
+          type: 'date'
       }
   }
 };
