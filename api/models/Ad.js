@@ -8,7 +8,55 @@
 module.exports = {
 
   attributes: {
-
+      user_id:{
+          type: 'long',
+          required: true,
+          unique: true
+      },
+      favorate: {
+          type: 'string',
+      },
+      title: {
+          type: 'string',
+          required: true
+      },
+      description: {
+          type: 'string'
+      },
+      type: {
+          type: 'number',
+          required: true
+      },
+      price: {
+          type: 'number',
+          required: true
+      },
+      lease: {
+          type: 'number'
+      },
+      mortgage: {
+          type: 'number'
+      },
+      gallary: {
+          type: 'array',
+          default: []
+      },
+      end_date: {
+          type: 'date',
+          required: true,
+          unique: true
+      },
+      start_date: {
+          type: 'date',
+          default: Date.now()
+      },
+      createAt: {
+          type: 'date',
+          default: Date.now()
+      },
+      updatedAt: {
+          type: 'date',
+          default: Date.now()
+      }
   }
 };
-
