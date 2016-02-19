@@ -5,11 +5,13 @@ module.exports = {
   attributes: {
 
       name: {
-          type: 'string',
+          type: 'string'
       },
-
+      password: {
+          type: 'string'
+      },
       uniqueid: {
-          type: 'string',
+          type: 'email',
           required: 'User must have a valid unique id',
           unique: true
       }
