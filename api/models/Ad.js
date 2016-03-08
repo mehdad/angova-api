@@ -37,12 +37,10 @@ module.exports = {
           type: 'integer'
       },
       gallary: {
-          type: 'string'
+          type: 'array'
       },
       end_date: {
-          type: 'date',
-          required: true,
-          unique: true
+          type: 'date'
       },
       start_date: {
           type: 'date'
