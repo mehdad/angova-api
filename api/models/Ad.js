@@ -22,15 +22,24 @@ module.exports = {
       description: {
           type: 'string'
       },
-      type: {
-          type: 'integer',
+      adType: {
+          model: 'Ad-type',
           required: true
+      },
+      usageType: {
+          model: 'Usage-type'
+      },
+      buildingType: {
+          model:'Building-type'
       },
       price: {
           type: 'integer',
           required: true
       },
-      lease: {
+      leaseP: {
+          type: 'integer'
+      },
+      leaseM: {
           type: 'integer'
       },
       mortgage: {
@@ -39,11 +48,17 @@ module.exports = {
       gallary: {
           type: 'array'
       },
-      end_date: {
-          type: 'date'
+      rooms: {
+          type: 'integer'
       },
-      start_date: {
-          type: 'date'
+      bedrooms: {
+          type: 'integer'
+      },
+      space: {
+          type:'integer'
+      },
+      approved: {
+          type: 'boolean'
       }
   }
 };
