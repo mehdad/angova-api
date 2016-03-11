@@ -59,6 +59,9 @@ module.exports = {
       },
       approved: {
           type: 'boolean'
+      },
+      active:{
+          type: 'boolean'
       }
   }
 };
